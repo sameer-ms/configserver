@@ -1,3 +1,22 @@
+spring:
+  boot:
+      admin:
+        client:
+          url: http://localhost:9294
+          username: admin
+          password: admin
+  management:
+    security:
+        enabled: false
+    endpoints:
+      web:      
+        exposure:
+          include: "*"
+    endpoint:
+      web:      
+        health:
+          show-details: always
+
 eureka:
   client:
     register-with-eureka: true

@@ -1,8 +1,9 @@
 eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    hostname: DESKTOP-27A0F63
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://DESKTOP-27A0F63:8761/eureka/
-  instance:
-    hostname: DESKTOP-27A0F63
+      defaultZone: http://${eureka.instance.hostname}:8167/eureka/

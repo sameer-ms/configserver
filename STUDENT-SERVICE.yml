@@ -1,2 +1,3 @@
-discovery:
-  hostname: DESKTOP-27A0F63
+eureka:
+  instance:
+    hostname: DESKTOP-27A0F63

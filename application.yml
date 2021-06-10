@@ -1,6 +1,6 @@
 eureka:
   instance:
-    instance-id: ${spring.application.name}:${server.port}
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
     hostname: DESKTOP-27A0F63
   client:
     register-with-eureka: true

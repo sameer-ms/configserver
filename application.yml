@@ -7,3 +7,11 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://${eureka.instance.hostname}:8167/eureka/
+
+security:
+  oauth2:
+    client:
+      clientId: test
+      clientSecret: temp
+    resource:
+      tokenInfoUri: http://DESKTOP-27A0F63:7777/oauth/check_token
